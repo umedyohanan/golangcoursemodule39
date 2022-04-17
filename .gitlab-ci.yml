@@ -5,8 +5,8 @@ stages:
 
 variables:
   PUBLIC_REGISTRY_HOST: docker.io
-  PUBLIC_REGISTRY_OWNER: scherkesov1006
-  PUBLIC_REGISTRY_APP_NAME: module-39
+  PUBLIC_REGISTRY_OWNER: uyohanan
+  PUBLIC_REGISTRY_APP_NAME: module39
 
 build_app:
   stage: build
@@ -18,7 +18,7 @@ test:
   stage: test
   image: golang:1.15
   script:
-    - echo "No tests!"
+    - go test
 
 lint:
   stage: test
